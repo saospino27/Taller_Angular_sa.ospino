@@ -1,0 +1,38 @@
+<div class="container-fluid">
+  <div class="col-6">
+    <table class="table">
+      <thead>
+        <tr>
+          <th class="h4">Serie</th>
+          <th class="h4">Canal</th>
+          <th class="h4">Temporadas</th>
+          <th class="h4">Descripción</th>
+          <th class="h4">Página web</th>
+          <th class="h4">Carátula</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let s of series">
+          <td>
+            <dd>{{s.name}}</dd>
+          </td>
+          <td>
+            <dd>{{s.channel}}</dd>
+          </td>
+          <td>
+            <dd>{{s.seasons}}</dd>
+          </td>
+          <td>
+            <dd>{{s.description}}</dd>
+          </td>
+          <td>
+            <dd>{{s.webpage}}</dd>
+          </td>
+          <td>
+            <dd>{{s.poster}}</dd>
+          </td>
+      </tr>
+      </tbody>
+    </table>
+  </div>
+</div>
