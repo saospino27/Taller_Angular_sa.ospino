@@ -6,7 +6,6 @@
           <th class="h4">Serie</th>
           <th class="h4">Canal</th>
           <th class="h4">Temporadas</th>
-          <th class="h4">Descripción</th>
           <th class="h4">Página web</th>
           <th class="h4">Carátula</th>
         </tr>
@@ -23,13 +22,10 @@
             <dd>{{s.seasons}}</dd>
           </td>
           <td>
-            <dd>{{s.description}}</dd>
+            <dd><a href={{s.webpage}} target="_blank">Página web</a></dd>
           </td>
           <td>
-            <dd>{{s.webpage}}</dd>
-          </td>
-          <td>
-            <dd>{{s.poster}}</dd>
+            <dd><img src={{s.poster}} class="img-fluid" alt="Responsive image"></dd>
           </td>
       </tr>
       </tbody>
